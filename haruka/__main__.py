@@ -134,17 +134,17 @@ def send_start(bot, update):
     except:
         pass
 
-    #chat = update.effective_chat  # type: Optional[Chat] and unused variable
-    text = "Hey there! My name is Haruka Aya - I'm here to help you manage your groups!\n\
+    #chat = update.effective_chat  # type: optional[Chat] and unused variable
+    text = "Hey there! My name is Sabrina - I'm here to help you manage your groups!\n\
 Click Help button to find out more about how to use me to my full potential.\n\n"
 
-    text += "Join [Haruka Aya Group](https://t.me/HarukaAyaGroup) ( @HarukaAyaGroup ) if you need any support or help\n\n\
-Follow [Haruka Aya](https://t.me/HarukaAya) ( @HarukaAya ) if you want to keep up with the news, updates and bot downtime!\n\n\
-Made with love by @RealAkito\n\nWant to add me to your group? [Click here!](t.me/HarukaAyaBot?startgroup=true)"
+    text += "Join [Sabrina Support Chat](https://t.me/SabrinaChat) ( @SabrinaChat ) if you need any support or help\n\n\
+Follow [Haruka Aya](https://t.me/SabrinaOfficial) ( @SabrinaOfficial ) if you want to keep up with the news, updates and bot downtime!\n\n\
+Made with love by @TechnoAyanOfficial\n\nWant to add me to your group? [Click here!](t.me/MissSabrina_Bot?startgroup=true)"
 
-    keyboard = [[InlineKeyboardButton(text="📢 Support Group", url="https://t.me/HarukaAyaGroup")]]
+    keyboard = [[InlineKeyboardButton(text="📢 Support Group", url="https://t.me/SabrinaChat")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
-    keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
+    keyboard += [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard), parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
